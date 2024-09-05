@@ -1,0 +1,153 @@
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --gray-500: hsl(0, 0%, 42%);
+    --gray-950: hsl(0, 0%, 7%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*Ensures the body takes up the full height of the viewport */
+    font-family: "Figtree", sans-serif;
+    line-height: 150%;
+    background-color: var(--yellow)
+}
+
+.article-card {
+    min-width: 327px;
+    max-width: 384px;
+    width: calc(100% - 3rem);
+    background-color: var(--white);
+    border-radius: 0.8rem;
+    border: 1px solid black;
+    box-shadow: 0.5em 0.5em var(--gray-950);
+    margin: auto 1.5em;
+
+}
+
+.blog-image {
+    margin: 1.5rem 1.5rem;
+    overflow: hidden;
+    border-radius: 0.625rem;
+
+}
+
+.blog-image img {
+    width: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+.blog-content {
+    margin: 0 1.5rem 1.5rem;
+
+}
+
+.blog-category {
+    display: flex;
+    align-self: start;
+    font-size: 0.875rem;
+    background-color: var(--yellow);
+    flex-shrink: 0;
+    max-width: fit-content;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
+    font-weight: 800;
+}
+
+.blog__publication-date {
+    font-size: 0.875rem;
+    margin: 0.75rem 0;
+    font-weight: 500;
+}
+
+.blog__title {
+    font-weight: 800;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.blog__title a {
+    text-decoration: none;
+    color: var(--gray-950);
+}
+
+.blog__title a:hover {
+    cursor: pointer;
+    color: var(--yellow);
+}
+
+.blog__title a:focus-visible {
+    color: var(--yellow);
+    outline: none;
+}
+
+.blog__description {
+    min-width: 279px;
+    color: var(--gray-500);
+    margin: 0.75rem 0;
+    font-weight: 500;
+}
+
+.blog__author {
+    display: flex;
+    align-items: center;
+    margin: 0 1.5em 1.5em 1.5em;
+}
+
+.blog__author-avatar {
+    width: 2rem;
+    height: 2rem;
+}
+
+.blog__authors-name {
+    font-size: 0.875rem;
+    font-weight: 800;
+    margin: 0 0.75em 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+    .blog-image img {
+        width: 279px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .blog-category {
+        font-size: 0.75rem;
+    }
+
+    .blog__publication-date {
+        font-size: 0.75rem;
+    }
+
+    .blog__title {
+        font-size: 1.25rem;
+    }
+
+    .blog__description {
+        font-size: 0.875rem;
+    }
+
+}
