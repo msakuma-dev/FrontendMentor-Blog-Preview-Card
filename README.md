@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://msakuma-dev.github.io/FrontendMentor-Blog-Preview-Card/](https://msakuma-dev.github.io/FrontendMentor-Blog-Preview-Card/)
+- Live Site URL: [https://msakuma-dev.github.io/FrontendMentor-Blog-Preview-Card/](https://msakuma-dev.github.io/FrontendMentor-Blog-Preview-Card/)
 
 ## My process
 
